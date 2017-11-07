@@ -1,0 +1,48 @@
+@import 'vars';
+@import 'all';
+
+.blur {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Allbirds.jpg");
+    background-size: contain;
+    display: flex;
+}
+
+.main {
+    padding: $space-small $space-medium;
+    width: 25em;
+    background-color: white;
+    opacity: .9;
+    border: $border-gray;
+    border-radius: .5rem;
+    margin: auto;
+    align-items: center;
+}
+
+.main {
+    h2 {
+        text-align: center;
+    }
+    div {
+        margin: auto;
+        width: 80%;
+    }
+    input {
+        height: $space-medium;
+        width: $full-stretch;
+        border: none;
+        border-bottom: $border-silver;
+        display: block;
+        margin: 0 auto 1.5em auto;
+        transition: border 1s;
+        font-size: $font-medium;
+        &:focus {
+            border-bottom: $border-blue;
+        }
+    }
+    label {
+        text-transform: uppercase;
+        font-family: $font-trebuchet;
+        font-size: $font-small;
+        color: gray;
+    }
+}

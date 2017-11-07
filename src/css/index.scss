@@ -1,0 +1,11 @@
+@import "vars";
+@import "all";
+
+body {
+    margin: $space-medium;
+}
+
+input {
+    padding: $space-small;
+    background-color: lightcyan;
+}

@@ -1,0 +1,51 @@
+html, body, .blur {
+  height: 100%;
+  font-size: 16px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+
+input:focus {
+  outline: none; }
+
+.blur {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("//edopeno.com/wp-content/uploads/2016/08/Allbirds.jpg");
+  background-size: contain;
+  display: flex; }
+
+.main {
+  width: 25rem;
+  height: 35rem;
+  padding: 1em;
+  background-color: white;
+  opacity: .9;
+  border: 1px solid grey;
+  border-radius: .5rem;
+  margin: auto;
+  align-items: center; }
+
+.main h2 {
+  text-align: center; }
+
+.main div {
+  margin: auto;
+  width: 80%; }
+
+.main input {
+  height: 2em;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid silver;
+  display: block;
+  margin: 0 auto 1.5em auto;
+  transition: border 1s;
+  font-size: 1.25em; }
+
+.main input:focus {
+  border-bottom: 1px solid blue; }
+
+.main label {
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: .75rem;
+  color: gray; }
+
+/*# sourceMappingURL=signup.css.map */
