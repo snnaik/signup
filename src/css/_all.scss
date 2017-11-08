@@ -10,3 +10,13 @@ html, body, .blur {
 input:focus {
     outline: none;
 }
+
+.action-btn {
+    padding: $space-small;
+    background-color: white;
+    &:hover {
+        background-color: darkgreen;
+        color: white;
+        cursor: pointer;
+    }
+}

@@ -2,8 +2,7 @@
 @import 'all';
 
 .blur {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Allbirds.jpg");
-    background-size: contain;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(150, 150, 150, 0.5)), url("/images/Allbirds.jpg");
     display: flex;
 }
 
@@ -11,20 +10,17 @@
     padding: $space-small $space-medium;
     width: 25em;
     background-color: white;
-    opacity: .9;
+    opacity: .95;
     border: $border-gray;
     border-radius: .5rem;
     margin: auto;
     align-items: center;
-}
 
-.main {
     h2 {
         text-align: center;
     }
-    div {
-        margin: auto;
-        width: 80%;
+    form {
+        padding: 0 $space-medium;
     }
     input {
         height: $space-medium;
@@ -44,5 +40,18 @@
         font-family: $font-trebuchet;
         font-size: $font-small;
         color: gray;
+    }
+    .action-btn {
+        display: block;
+        margin: auto;
+        &:hover {
+            background-color: darkgreen;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    sup {
+        color: red;
+        font-size: $font-small;
     }
 }

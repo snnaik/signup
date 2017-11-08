@@ -1,34 +1,24 @@
 <div class="blur">
     <div class='main'>
-        <h2>Sign Up</h2>
+        <h2>Please Sign Up</h2>
 
         <form action="/submit" method="post">
-            <div>
-                <label for="fname">first name</label>
-                <input type='text' name='fname'/>
-            </div>
+            <label for="fname">first name <sup>*</sup></label>
+            <input type='text' name='fname' pattern="[A-Za-z]" required/>
 
-            <div>
-                <label for="lname">last name</label>
-                <input type='text' name='lname'/>
-            </div>
+            <label for="lname">last name <sup>*</sup></label>
+            <input type='text' name='lname' pattern="[A-Za-z]" required/>
 
-            <div>
-                <label for="email">email address</label>
-                <input type='email' name='email'/>
-            </div>
+            <label for="email">email address <sup>*</sup></label>
+            <input type='email' name='email' required/>
 
-            <div>
-                <label for="password">password</label>
-                <input type='password' name='password'/>
-            </div>
+            <label for="password">password <sup>*</sup></label>
+            <input type='password' name='password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase letter, one lowercase letter, and at least 8 or more characters" required/>
 
-            <div>
-                <label for="confirm">confirm password</label>
-                <input type='password' name='confirm'/>
-            </div>
+            <label for="confirm">confirm password <sup>*</sup></label>
+            <input type='password' name='confirm' required/>
 
-            <input type="submit" value="Sign Up"/>
+            <button class="action-btn">Submit</button>
         </form>
     </div>
 </div>
